@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Analysis of Passes</title>
+  </head>
+  <body>
+
+    <h2>Please enter the two operators and the dates</h2>
+
+    <form action="http://localhost:9102/interoperability/PassesAnalysis" method="POST">
+      <div>
+        <label for="op_1">Tags of operator:</label>
+        <input type="text" id="op_1" name="op_1" required><br><br>
+      </div>
+      <div>
+        <label for="op_2">Passed by the stations of operator:</label>
+        <input type="text" id="op_2" name="op_2" required><br><br>
+      </div>
+      <div>
+        <label for="Datef">Date from:</label>
+        <input type="date" id="Datef" name="datef" required><br><br>
+      </div>
+      <div>
+        <label for="Datet">Date to:</label>
+        <input type="date" id="Datet" name="datet" required><br><br>
+      </div>
+      <div>
+        <input type="checkbox" id="format" name="format">
+        <label for="format">CSV format (optional)</label><br>
+      </div>
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+
+    <p>Click the "Submit" button when all the fields are completed correctly.</p>
+
+    <form action="http://localhost:9102">
+      <input type="submit" value="Back to main page" />
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Payoff  Dates</title>
+  </head>
+  <body>
+
+    <h2>Please enter the operators</h2>
+
+    <form action="http://localhost:9102/interoperability/LastPayment" method="POST">
+      <div>
+        <label for="op_1">Tags of operator:</label>
+        <input type="text" id="op_1" name="op_1" required><br><br>
+      </div>
+      <div>
+        <input type="checkbox" id="format" name="format">
+        <label for="format">CSV format (optional)</label><br>
+      </div>
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+
+    <p>Click the "Submit" button when all the fields are completed correctly.</p>
+
+    <form action="http://localhost:9102">
+      <input type="submit" value="Back to main page" />
+    </form>
+
+  </body>
+</html>

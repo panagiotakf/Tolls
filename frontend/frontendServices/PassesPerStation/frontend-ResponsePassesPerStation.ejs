@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Passes per Station</title>
+  </head>
+  <body>
+    <h2>Passes by the <%= Station %> station (Operator <%= StationOperator %>),
+     from <%= PeriodFrom %> to <%= PeriodTo %>.</h2>
+
+    <h4>Total number: <%= NumberOfPasses %></h4>
+
+    <div>
+      <form action="http://localhost:9102">
+        <input type="submit" value="Back to main page" />
+      </form>
+    </div>
+
+    //The pass list would be here!!
+
+  </body>
+</html>
